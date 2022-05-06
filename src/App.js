@@ -20,6 +20,7 @@ function App() {
       {!startGame && <Homepage startGameBtn={startGameBtn}/>}
       <div>
           {startGame && questionContainerDiv}
+          {startGame && <button className='check-answer-btn'>Check Answers</button>}
       </div>
       
 

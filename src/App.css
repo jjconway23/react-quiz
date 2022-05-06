@@ -29,14 +29,36 @@
 /* Questions Container */
 
 .questions-holder{
-  padding: 3rem;
+  padding: 1.5rem;
 }
 h3{
   max-width: 70rem;
   margin: auto;
+  text-align: left;
+  letter-spacing: 0.05rem;
+  line-height: 2.6rem;
 }
 .answers-container{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 0;
+}
+
+.answer-btn{
+    padding: 0.75rem 1.8rem;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0.1rem solid hsla(215, 50%, 23%, 1);
+    cursor: pointer;
+}
+.check-answer-btn{
+    padding: 1.2rem 4rem;
+    font-size: 2rem;
+    border-radius: 6px;
+    border: none;
+    background-color:hsla(215, 50%, 23%, 1);
+    color: hsla(105, 55%, 96%, 1);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.4rem;
 }
