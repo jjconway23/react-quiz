@@ -4,9 +4,17 @@ import './App.css';
 
 
 function App() {
+  const [startGame, setStartGame] = React.useState(false) 
+  function startGameBtn(){
+    console.log("clicked")
+    setStartGame( prevState => !prevState)
+  }
+
   return (
     <div className="App">
-      <Homepage/>
+      {!startGame && <Homepage
+      startGameBtn={startGameBtn}
+      />}
     </div>
   );
 }
