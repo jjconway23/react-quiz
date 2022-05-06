@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function QuestionsContainer(){
+export default function QuestionsContainer(props){
     return(<div className="questions-holder">
-        <h3>Question will go here</h3>
+        <h3>{props.question}</h3>
         <div className="answers-container">
             <button>Answer one</button>
             <button>Answer Two</button>
