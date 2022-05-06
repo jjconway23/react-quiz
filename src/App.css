@@ -42,12 +42,14 @@ h3{
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
+    max-width: fit-content;
+    min-width: 60rem;
 }
 
 .answer-btn{
     padding: 0.75rem 1.8rem;
     background-color: transparent;
-    border-radius: 3px;
+    border-radius: 2rem;
     border: 0.1rem solid hsla(215, 50%, 23%, 1);
     cursor: pointer;
 }
