@@ -7,7 +7,6 @@ import data from "./dummyData"
 function App() {
   const [startGame, setStartGame] = React.useState(false) 
   function startGameBtn(){
-    console.log("clicked")
     setStartGame( prevState => !prevState)
   }
   console.log(data.results)
@@ -15,11 +14,14 @@ function App() {
     return <Questions question={container.question}/>
   } )
 
-
+ 
   return (
     <div className="App">
       {!startGame && <Homepage startGameBtn={startGameBtn}/>}
-      {questionContainerDiv}
+      <div>
+          {startGame && questionContainerDiv}
+      </div>
+      
 
     </div>
   );
