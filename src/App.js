@@ -1,6 +1,6 @@
 import React from 'react';
 import Homepage from "./components/Homepage"
-import Questions from "./components/QuestionsContainer"
+import QuestionsContainer from "./components/QuestionsContainer"
 import './App.css';
 import data from "./dummyData"
 
@@ -10,8 +10,8 @@ function App() {
     setStartGame( prevState => !prevState)
   }
   console.log(data.results)
-  const questionContainerDiv = data.results.map( container => {
-    return <Questions question={container.question}/>
+  const questionDiv = data.results.map( container => {
+    return <QuestionsContainer question={container.question}/>
   } )
 
  
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       {!startGame && <Homepage startGameBtn={startGameBtn}/>}
       <div>
-          {startGame && questionContainerDiv}
+          {startGame && questionDiv}
           {startGame && <button className='check-answer-btn'>Check Answers</button>}
       </div>
       
