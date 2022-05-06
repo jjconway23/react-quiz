@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* CSS HSL */
+/* --imperial-red: hsla(355, 78%, 56%, 1);
+--honeydew: hsla(105, 55%, 96%, 1);
+--powder-blue: hsla(182, 43%, 76%, 1);
+--celadon-blue: hsla(203, 39%, 44%, 1);
+--prussian-blue: hsla(215, 50%, 23%, 1); */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: 'Inter';
+  background-color: hsla(105, 55%, 96%, 1);
 }
